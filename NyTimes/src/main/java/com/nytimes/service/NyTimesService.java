@@ -21,8 +21,7 @@ public class NyTimesService {
 	public NyTimesResponse getMostViewedResp() {
 		NyTimesResponse nyTimesResponse = null;
 		try {
-			nyTimesResponse = restemplate.getForObject(
-					"http://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=084608dd4e504f4dbbdcd5caa49e8e1e",
+			nyTimesResponse = restemplate.getForObject("http://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=084608dd4e504f4dbbdcd5caa49e8e1e",
 					NyTimesResponse.class);
 		}catch(Exception e) {
 			e.printStackTrace();

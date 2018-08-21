@@ -1,4 +1,3 @@
-
 package com.nytimes.model;
 
 import java.util.HashMap;
